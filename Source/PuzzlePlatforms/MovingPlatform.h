@@ -21,7 +21,17 @@ class PUZZLEPLATFORMS_API AMovingPlatform : public AStaticMeshActor
 	
 	virtual void Tick(float DeltaSeconds) override;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Speed = 20;
+
+	UPROPERTY(EditAnywhere, Meta = (MakeEditWidget = true))
+	FVector TargetLocation;
 	
+	FVector StartLocation;
+
+	private:
+	UPROPERTY(VisibleAnywhere)
+	FVector GlobalTargetLocation;
+	UPROPERTY(VisibleAnywhere)
+	FVector GlobalStartLocation;
 };

@@ -11,23 +11,39 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
     Super::BeginPlay();
+
+    SetMobility(EComponentMobility::Movable);
+    
+    GlobalTargetLocation = GetTransform().TransformPosition(TargetLocation);
+    GlobalStartLocation = GetActorLocation();
     
     //If it's server, replicate movement for client to update
     if(HasAuthority())
     {
         SetReplicates(true);
-        SetReplicateMovement(true); 
+        SetReplicateMovement(true);
     }
+    
 }
 
 void AMovingPlatform::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
 
-    if(HasAuthority())
+    if(HasAuthority())                                                
     {
         FVector Location = GetActorLocation();
-        Location += FVector::ForwardVector * Speed * DeltaSeconds;
-        SetActorLocation(Location); 
-    }
+        float JourneyLength = (GlobalTargetLocation - GlobalStartLocation).Size();
+        float JourneyTraveled = (Location - GlobalStartLocation).Size();
+
+        if(JourneyLength < JourneyTraveled)
+        {
+            GlobalTargetLocation = GlobalStartLocation;
+            GlobalStartLocation = GetActorLocation();
+        }
+
+        FVector Direction = (GlobalTargetLocation - GlobalStartLocation).GetSafeNormal();
+        Location += Direction * Speed * DeltaSeconds;    
+        SetActorLocation(Location);
+    }                                                                 
 }
