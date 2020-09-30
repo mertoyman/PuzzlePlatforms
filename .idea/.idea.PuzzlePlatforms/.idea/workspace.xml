@@ -30,21 +30,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/CoreUObject/Public/UObject/SparseDelegate.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Core/Public/Math/Vector.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Components/PrimitiveComponent.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.h" />
         <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.cpp" />
       </list>
     </option>
   </component>
@@ -287,6 +287,9 @@
       <workItem from="1600873572411" duration="37000" />
       <workItem from="1600873646986" duration="11108000" />
       <workItem from="1600948847767" duration="5848000" />
+      <workItem from="1601132560679" duration="10636000" />
+      <workItem from="1601220387603" duration="1867000" />
+      <workItem from="1601455982671" duration="1563000" />
     </task>
     <servers />
   </component>

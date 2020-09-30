@@ -43678,6 +43678,8 @@
         <e p="PuzzlePlatforms" t="Include">
           <e p="MovingPlatform.cpp" t="Include" />
           <e p="MovingPlatform.h" t="Include" />
+          <e p="PlatformTrigger.cpp" t="Include" />
+          <e p="PlatformTrigger.h" t="Include" />
           <e p="PuzzlePlatforms.Build.cs" t="Include" />
           <e p="PuzzlePlatforms.cpp" t="Include" />
           <e p="PuzzlePlatforms.h" t="Include" />

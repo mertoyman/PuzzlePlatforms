@@ -29,6 +29,12 @@ class PUZZLEPLATFORMS_API AMovingPlatform : public AStaticMeshActor
 	
 	FVector StartLocation;
 
+	void AddActiveTrigger();
+	void RemoveActiveTrigger();
+
+	UPROPERTY(EditAnywhere)
+	int ActiveTriggers = 1;
+
 	private:
 	UPROPERTY(VisibleAnywhere)
 	FVector GlobalTargetLocation;
