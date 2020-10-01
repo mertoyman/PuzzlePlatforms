@@ -43685,6 +43685,8 @@
           <e p="PuzzlePlatforms.h" t="Include" />
           <e p="PuzzlePlatformsCharacter.cpp" t="Include" />
           <e p="PuzzlePlatformsCharacter.h" t="Include" />
+          <e p="PuzzlePlatformsGameInstance.cpp" t="Include" />
+          <e p="PuzzlePlatformsGameInstance.h" t="Include" />
           <e p="PuzzlePlatformsGameMode.cpp" t="Include" />
           <e p="PuzzlePlatformsGameMode.h" t="Include" />
         </e>
