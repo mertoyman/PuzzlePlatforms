@@ -43674,6 +43674,7 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="PuzzlePlatforms.sln" t="IncludeFlat" />
       <e p="PuzzlePlatforms.uproject" t="Include" />
+      <e p="README.md" t="Include" />
       <e p="Source" t="Include">
         <e p="PuzzlePlatforms" t="Include">
           <e p="MovingPlatform.cpp" t="Include" />

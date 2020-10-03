@@ -32,14 +32,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatforms.Build.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/CoreUObject/Public/UObject/SparseDelegate.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Core/Public/Math/Vector.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Engine/World.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/DeveloperTools/Epic Games/UE_4.25/Engine/Source/Runtime/Engine/Private/Components/PrimitiveComponent.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -51,8 +53,9 @@
         <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.cpp" />
         <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.h" />
         <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.cpp" />
-        <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" />
+        <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatforms.Build.cs" />
         <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" />
+        <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" />
       </list>
     </option>
   </component>
@@ -301,6 +304,10 @@
       <workItem from="1601220387603" duration="1867000" />
       <workItem from="1601455982671" duration="5071000" />
       <workItem from="1601551371805" duration="9606000" />
+      <workItem from="1601715692998" duration="1793000" />
+      <workItem from="1601717654365" duration="329000" />
+      <workItem from="1601718153175" duration="4007000" />
+      <workItem from="1601722479972" duration="897000" />
     </task>
     <servers />
   </component>
