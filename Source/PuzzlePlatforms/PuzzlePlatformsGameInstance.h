@@ -3,20 +3,23 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "MenuSystem/MenuInterface.h"
 #include "Engine/GameInstance.h"
+
 #include "PuzzlePlatformsGameInstance.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance
+class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, public IMenuInterface
 {
 	GENERATED_BODY()
 
 	UPuzzlePlatformsGameInstance(const FObjectInitializer& ObjectInitializer);
  
-	virtual void Init() override;
+	virtual void Init();
 
 	UFUNCTION(BlueprintCallable)
 	void LoadMenu();
@@ -27,7 +30,7 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance
 	UFUNCTION(Exec)
     void Join(const FString& Address);
 
-	private:
-	TSubclassOf<UUserWidget> MenuClass;
+private:
+	TSubclassOf<class UUserWidget> MenuClass;
 	
 };
