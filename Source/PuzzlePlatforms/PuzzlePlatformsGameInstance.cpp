@@ -6,6 +6,7 @@
 #include "Engine/Engine.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "MenuSystem/MainMenu.h"
 #include "MenuSystem/PauseMenu.h"
@@ -13,24 +14,28 @@
 UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitializer& ObjectInitializer)
 {
     ConstructorHelpers::FClassFinder<UUserWidget> MenuBPClass(TEXT("/Game/MenuSystem/WBP_MainMenu"));
-    ConstructorHelpers::FClassFinder<UUserWidget> PauseMenuBPClass(TEXT("/Game/MenuSystem/WBP_PauseMenu"));
     if(!ensure(MenuBPClass.Class != nullptr)) return;
     MenuClass = MenuBPClass.Class;
+
+    ConstructorHelpers::FClassFinder<UUserWidget> PauseMenuBPClass(TEXT("/Game/MenuSystem/WBP_PauseMenu"));
     if(!ensure(PauseMenuBPClass.Class != nullptr)) return;
     PauseMenuClass = PauseMenuBPClass.Class;
 }
 
 void UPuzzlePlatformsGameInstance::Init()
 {
-    APlayerController* PlayerController = GetFirstLocalPlayerController();
-    if(!ensure(PlayerController != nullptr)) return;
-
-    if(PlayerController->IsInputKeyDown(EKeys::Enter))
-    {
-        UE_LOG(LogTemp, Warning, TEXT("sssss"));
-    }
 }
 
+//Run on pause menu
+void UPuzzlePlatformsGameInstance::LoadMainMenu()
+{
+    APlayerController* PlayerController = GetFirstLocalPlayerController();
+    if(!ensure(PlayerController != nullptr)) return;
+   
+    PlayerController->ClientTravel("/Game/MenuSystem/MainMenu", ETravelType::TRAVEL_Absolute);
+}
+
+//Run on first launch of application
 void UPuzzlePlatformsGameInstance::LoadMenu()
 {
     if(!ensure(MenuClass != nullptr)) return;
@@ -46,10 +51,12 @@ void UPuzzlePlatformsGameInstance::LoadPauseMenu()
 {
     if(!ensure(PauseMenuClass != nullptr)) return;
 
-    PauseMenu = CreateWidget<UPauseMenu>(this, PauseMenuClass);
+    UMenuWidget* PauseMenu = CreateWidget<UMenuWidget>(this, PauseMenuClass);
     if (!ensure(PauseMenu != nullptr)) return;
     PauseMenu->Setup();
-    
+    PauseMenu->SetMenuInterface(this);
+
+    UGameplayStatics::SetGamePaused(GetWorld(),true);
 }
 
 void UPuzzlePlatformsGameInstance::Host()

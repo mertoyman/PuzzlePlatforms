@@ -28,16 +28,16 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 	void LoadPauseMenu();
 
 	UFUNCTION(Exec)
-	void Host();
+	virtual void Host() override;
 
 	UFUNCTION(Exec)
-    void Join(const FString& Address);
+    virtual void Join(const FString& Address) override;
 
+	virtual void LoadMainMenu() override;
+	
 private:
 	TSubclassOf<class UUserWidget> MenuClass;
 	TSubclassOf<class UUserWidget> PauseMenuClass;
 	
 	class UMainMenu* Menu;
-	class UPauseMenu* PauseMenu;
-	class UInputComponent* InputComponent;
 };

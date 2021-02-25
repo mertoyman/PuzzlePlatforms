@@ -49331,6 +49331,8 @@
             <e p="MainMenu.h" t="Include" />
             <e p="MenuInterface.cpp" t="Include" />
             <e p="MenuInterface.h" t="Include" />
+            <e p="MenuWidget.cpp" t="Include" />
+            <e p="MenuWidget.h" t="Include" />
             <e p="PauseMenu.cpp" t="Include" />
             <e p="PauseMenu.h" t="Include" />
           </e>

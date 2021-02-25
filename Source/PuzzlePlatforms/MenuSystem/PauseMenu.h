@@ -3,33 +3,30 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Blueprint/UserWidget.h"
-#include "Chaos/AABBTree.h"
-#include "Components/Button.h"
-
-
+#include "MenuWidget.h"
 #include "PauseMenu.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PUZZLEPLATFORMS_API UPauseMenu : public UUserWidget
+class PUZZLEPLATFORMS_API UPauseMenu : public UMenuWidget
 {
 	GENERATED_BODY()
 
-public:
-	void Setup();
-	//void TearDown();
 protected:
 	virtual bool Initialize();
 	
-// private:
-// 	UPROPERTY(meta = (BindWidget))
-// 	UButton* ResumeButton;
-//
-// 	UPROPERTY(meta = (BindWidget))
-// 	UButton* MainMenuButton;
-//
-	
+private:
+	UPROPERTY(meta = (BindWidget))
+	class UButton* ResumeButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* MainMenuButton;
+
+	UFUNCTION()
+	void ResumeGame();
+
+	UFUNCTION()
+	void ReturnToMainMenu();
 };
