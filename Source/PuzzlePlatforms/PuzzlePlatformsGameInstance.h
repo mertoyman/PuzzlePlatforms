@@ -24,6 +24,9 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 	UFUNCTION(BlueprintCallable)
 	void LoadMenu();
 
+	UFUNCTION(BlueprintCallable)
+	void LoadPauseMenu();
+
 	UFUNCTION(Exec)
 	void Host();
 
@@ -32,7 +35,9 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 
 private:
 	TSubclassOf<class UUserWidget> MenuClass;
+	TSubclassOf<class UUserWidget> PauseMenuClass;
 	
 	class UMainMenu* Menu;
-	
+	class UPauseMenu* PauseMenu;
+	class UInputComponent* InputComponent;
 };
