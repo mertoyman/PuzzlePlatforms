@@ -52,6 +52,11 @@ void UPuzzlePlatformsGameInstance::Host()
 
 void UPuzzlePlatformsGameInstance::Join(const FString& Address)
 {
+    if(Menu != nullptr)
+    {
+        Menu->TearDown();
+    }
+    
     UEngine* Engine = GetEngine();
     if (!ensure(Engine != nullptr)) return;
 

@@ -6,8 +6,6 @@
 
 #include "MenuInterface.h"
 #include "Blueprint/UserWidget.h"
-#include "Chaos/AABBTree.h"
-
 #include "MainMenu.generated.h"
 
 /**
@@ -25,14 +23,41 @@ protected:
 	virtual bool Initialize();
 private:
 	UPROPERTY(meta = (BindWidget))
-	class UButton* Host;
+	class UButton* HostButton;
 
 	UPROPERTY(meta = (BindWidget))
-	class UButton* Join;
+	class UButton* JoinButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* CancelButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class UButton* ConfirmJoinMenuButton;
+
+	UPROPERTY(meta = (BindWidget))
+	class UWidgetSwitcher* MenuSwitcher;
+	
+	UPROPERTY(meta = (BindWidget))
+	class UWidget* MainMenu;
+
+	UPROPERTY(meta = (BindWidget))
+	class UWidget* JoinMenu;
+
+	UPROPERTY(meta = (BindWidget))
+	class UEditableTextBox* IPAddressField;
 
 	UFUNCTION()
 	void HostServer();
 
+	UFUNCTION()
+    void JoinServer();
+
+	UFUNCTION()
+	void OpenJoinMenu();
+
+	UFUNCTION()
+	void OpenMainMenu();
+	
 	IMenuInterface* _MenuInterface;
 	
 };
