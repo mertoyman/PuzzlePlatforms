@@ -27,17 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="482b7854-59b5-42e2-a4cc-30843dd2eee3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzlePlatforms/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzlePlatforms/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzlePlatforms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzlePlatforms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MenuSystem/MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MenuSystem/MainMenu.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuInterface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuInterface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +61,15 @@
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuInterface.h" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MainMenu.h" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MainMenu.cpp" />
-      <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" />
-      <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuWidget.cpp" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuWidget.h" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuInterface.h" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.h" />
-      <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" />
       <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.cpp" />
+      <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" />
+      <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" />
+      <option value="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1huXeD1pYAOd3iVcAIYOGDv1ocM" />
@@ -338,7 +332,8 @@
       <workItem from="1614088905229" duration="803000" />
       <workItem from="1614090603640" duration="3897000" />
       <workItem from="1614109917010" duration="595000" />
-      <workItem from="1614175580029" duration="20602000" />
+      <workItem from="1614175580029" duration="21667000" />
+      <workItem from="1614270341122" duration="1849000" />
     </task>
     <servers />
   </component>

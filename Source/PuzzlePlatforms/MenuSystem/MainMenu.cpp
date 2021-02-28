@@ -24,6 +24,8 @@ bool UMainMenu::Initialize()
 	if (!ensure(ConfirmJoinMenuButton != nullptr)) return false;
 	ConfirmJoinMenuButton->OnClicked.AddDynamic(this, &UMainMenu::JoinServer);
 
+	if (!ensure(QuitButton != nullptr)) return false;
+	QuitButton->OnClicked.AddDynamic(this, &UMainMenu::QuitGame);
 
 	return true;
 }
@@ -61,4 +63,13 @@ void UMainMenu::OpenMainMenu()
 	if (!ensure(MainMenu != nullptr)) return;
 	MenuSwitcher->SetActiveWidget(MainMenu);
 	
+}
+
+void UMainMenu::QuitGame()
+{
+	UGameViewportClient* const ViewPort = GetGameInstance()->GetGameViewportClient();
+	if(ViewPort)
+	{
+		ViewPort->ConsoleCommand("quit");
+	}
 }

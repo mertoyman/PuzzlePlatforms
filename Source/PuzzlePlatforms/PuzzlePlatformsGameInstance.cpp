@@ -55,8 +55,6 @@ void UPuzzlePlatformsGameInstance::LoadPauseMenu()
     if (!ensure(PauseMenu != nullptr)) return;
     PauseMenu->Setup();
     PauseMenu->SetMenuInterface(this);
-
-    UGameplayStatics::SetGamePaused(GetWorld(),true);
 }
 
 void UPuzzlePlatformsGameInstance::Host()
