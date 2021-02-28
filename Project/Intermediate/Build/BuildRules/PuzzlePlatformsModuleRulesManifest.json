@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Projects\\Unreal Projects\\Github Repos\\Puzzle Platforms\\Source\\PuzzlePlatforms\\PuzzlePlatforms.Build.cs",
+		"D:\\Projects\\Unreal Projects\\Github Repos\\Puzzle Platforms\\Source\\PuzzlePlatforms.Target.cs",
+		"D:\\Projects\\Unreal Projects\\Github Repos\\Puzzle Platforms\\Source\\PuzzlePlatformsEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.1"
+}

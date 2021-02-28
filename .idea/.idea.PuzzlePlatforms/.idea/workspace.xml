@@ -27,11 +27,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="482b7854-59b5-42e2-a4cc-30843dd2eee3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PuzzlePlatforms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PuzzlePlatforms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MenuSystem/WBP_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditorPerProjectUserSettings.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzlePlatforms.uproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms.Target.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MainMenu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuInterface.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuInterface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuWidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/MenuWidget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MenuSystem/PauseMenu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatforms.Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatforms.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatforms.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsCharacter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsCharacter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameMode.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameMode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PuzzlePlatformsEditor.Target.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +66,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.h" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Public/Components/Button.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/MovingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Logging/LogMacros.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Public/Components/Overlay.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PlatformTrigger.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatforms.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Public/Blueprint/UserWidget.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/PuzzlePlatforms/PuzzlePlatformsGameInstance.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -333,7 +349,7 @@
       <workItem from="1614090603640" duration="3897000" />
       <workItem from="1614109917010" duration="595000" />
       <workItem from="1614175580029" duration="21667000" />
-      <workItem from="1614270341122" duration="1849000" />
+      <workItem from="1614270341122" duration="2685000" />
     </task>
     <servers />
   </component>
