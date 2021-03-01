@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 
+
+#include "OnlineSessionSettings.h"
 #include "MenuSystem/MenuInterface.h"
 #include "Engine/GameInstance.h"
 #include "Interfaces/OnlineSessionInterface.h"
@@ -44,7 +46,9 @@ private:
 	class UMainMenu* Menu;
 
 	IOnlineSessionPtr SessionInterface;
+	TSharedPtr<FOnlineSessionSearch> SessionSearch;
 
+	void OnFindSessionComplete(bool Success);
 	void OnDestroySessionComplete(FName SessionName, bool Success);
 	void OnCreateSessionComplete(FName SessionName, bool Success);
 	void CreateSession();

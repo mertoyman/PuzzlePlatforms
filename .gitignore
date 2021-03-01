@@ -73,6 +73,7 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-Project/Saved/
-Project/Intermediate/
+Project/Saved/*
+Project/Intermediate/*
+Project/Binaries/*
 Project/.idea/.idea.PuzzlePlatforms/.idea/workspace.xml
