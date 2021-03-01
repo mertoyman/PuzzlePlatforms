@@ -1,5 +1,5 @@
-D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\Definitions.PuzzlePlatforms.h
-D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Source\PuzzlePlatforms\MovingPlatform.h
+D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\Definitions.PuzzlePlatforms.h
+D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Source\PuzzlePlatforms\MovingPlatform.h
 D:\DeveloperTools\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
 D:\DeveloperTools\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
-D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\UE4Editor\Inc\PuzzlePlatforms\MovingPlatform.generated.h
+D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\UE4Editor\Inc\PuzzlePlatforms\MovingPlatform.generated.h

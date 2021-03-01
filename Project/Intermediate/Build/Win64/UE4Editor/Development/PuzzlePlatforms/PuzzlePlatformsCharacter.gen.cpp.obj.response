@@ -230,12 +230,16 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\UE4Editor\Inc\PuzzlePlatforms"
-/I "D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Source"
+/I "D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\UE4Editor\Inc\PuzzlePlatforms"
+/I "D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Source"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
 /I Runtime\MRMesh\Public
+/I ..\Plugins\Online\OnlineSubsystem\Intermediate\Build\Win64\UE4Editor\Inc\OnlineSubsystem
+/I ..\Plugins\Online\OnlineSubsystem
+/I ..\Plugins\Online\OnlineSubsystem\Source
+/I ..\Plugins\Online\OnlineSubsystem\Source\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -265,12 +269,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\PuzzlePlatformsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\PuzzlePlatformsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\PuzzlePlatformsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\UE4Editor\Inc\PuzzlePlatforms\PuzzlePlatformsCharacter.gen.cpp"
-/FI"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\Definitions.PuzzlePlatforms.h"
-/Fo"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\PuzzlePlatformsCharacter.gen.cpp.obj"
+/FI"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\PuzzlePlatformsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\PuzzlePlatformsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\PuzzlePlatformsEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\UE4Editor\Inc\PuzzlePlatforms\PuzzlePlatformsCharacter.gen.cpp"
+/FI"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\Definitions.PuzzlePlatforms.h"
+/Fo"D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project\Intermediate\Build\Win64\UE4Editor\Development\PuzzlePlatforms\PuzzlePlatformsCharacter.gen.cpp.obj"
 /TP
 /GR-
 /W4

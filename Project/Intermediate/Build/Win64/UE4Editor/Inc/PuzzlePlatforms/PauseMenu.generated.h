@@ -13,20 +13,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PUZZLEPLATFORMS_PauseMenu_generated_h
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_SPARSE_DATA
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_SPARSE_DATA
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execReturnToMainMenu); \
 	DECLARE_FUNCTION(execResumeGame);
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execReturnToMainMenu); \
 	DECLARE_FUNCTION(execResumeGame);
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS_NO_PURE_DECLS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPauseMenu(); \
 	friend struct Z_Construct_UClass_UPauseMenu_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(UPauseMenu)
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUPauseMenu(); \
 	friend struct Z_Construct_UClass_UPauseMenu_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(UPauseMenu)
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_STANDARD_CONSTRUCTORS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPauseMenu(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPauseMenu) \
@@ -57,7 +57,7 @@ private: \
 public:
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_ENHANCED_CONSTRUCTORS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPauseMenu(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -70,32 +70,32 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPauseMenu); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPauseMenu)
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_PRIVATE_PROPERTY_OFFSET \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ResumeButton() { return STRUCT_OFFSET(UPauseMenu, ResumeButton); } \
 	FORCEINLINE static uint32 __PPO__MainMenuButton() { return STRUCT_OFFSET(UPauseMenu, MainMenuButton); }
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_12_PROLOG
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_GENERATED_BODY_LEGACY \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_12_PROLOG
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_PRIVATE_PROPERTY_OFFSET \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_SPARSE_DATA \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_STANDARD_CONSTRUCTORS \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_PRIVATE_PROPERTY_OFFSET \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_SPARSE_DATA \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_GENERATED_BODY \
+#define Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_PRIVATE_PROPERTY_OFFSET \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_SPARSE_DATA \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS_NO_PURE_DECLS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_ENHANCED_CONSTRUCTORS \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_PRIVATE_PROPERTY_OFFSET \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_SPARSE_DATA \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_INCLASS_NO_PURE_DECLS \
+	Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -103,7 +103,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PUZZLEPLATFORMS_API UClass* StaticClass<class UPauseMenu>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h
+#define CURRENT_FILE_ID Project_Source_PuzzlePlatforms_MenuSystem_PauseMenu_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PUZZLEPLATFORMS_MenuWidget_generated_h
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_SPARSE_DATA
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS_NO_PURE_DECLS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_SPARSE_DATA
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMenuWidget(); \
 	friend struct Z_Construct_UClass_UMenuWidget_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UMenuWidget)
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUMenuWidget(); \
 	friend struct Z_Construct_UClass_UMenuWidget_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UMenuWidget)
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_STANDARD_CONSTRUCTORS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMenuWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMenuWidget) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_ENHANCED_CONSTRUCTORS \
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMenuWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,28 +60,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UMenuWidget); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMenuWidget)
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_PRIVATE_PROPERTY_OFFSET
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_14_PROLOG
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_GENERATED_BODY_LEGACY \
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_PRIVATE_PROPERTY_OFFSET
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_14_PROLOG
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_PRIVATE_PROPERTY_OFFSET \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_SPARSE_DATA \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_STANDARD_CONSTRUCTORS \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_PRIVATE_PROPERTY_OFFSET \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_SPARSE_DATA \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_GENERATED_BODY \
+#define Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_PRIVATE_PROPERTY_OFFSET \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_SPARSE_DATA \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS_NO_PURE_DECLS \
-	Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_ENHANCED_CONSTRUCTORS \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_PRIVATE_PROPERTY_OFFSET \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_SPARSE_DATA \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_INCLASS_NO_PURE_DECLS \
+	Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -89,7 +89,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PUZZLEPLATFORMS_API UClass* StaticClass<class UMenuWidget>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Puzzle_Platforms_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h
+#define CURRENT_FILE_ID Project_Source_PuzzlePlatforms_MenuSystem_MenuWidget_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

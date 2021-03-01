@@ -3,10 +3,13 @@
 
 #include "PuzzlePlatformsGameInstance.h"
 
+
+#include "OnlineSessionSettings.h"
 #include "Engine/Engine.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
-#include "Kismet/GameplayStatics.h"
+#include "OnlineSubsystem.h"
+#include "Interfaces/OnlineSessionInterface.h"
 
 #include "MenuSystem/MainMenu.h"
 #include "MenuSystem/PauseMenu.h"
@@ -24,6 +27,19 @@ UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitiali
 
 void UPuzzlePlatformsGameInstance::Init()
 {
+    IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
+    if(OnlineSubsystem == nullptr)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("No subsystem found"));
+    }
+    
+    UE_LOG(LogTemp, Warning, TEXT("%s"), *OnlineSubsystem->GetSubsystemName().ToString());
+    SessionInterface = OnlineSubsystem->GetSessionInterface();
+    
+    if(SessionInterface.IsValid())
+    {
+        SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformsGameInstance::OnCreateSessionComplete);
+    }
 }
 
 //Run on pause menu
@@ -34,6 +50,7 @@ void UPuzzlePlatformsGameInstance::LoadMainMenu()
    
     PlayerController->ClientTravel("/Game/MenuSystem/MainMenu", ETravelType::TRAVEL_Absolute);
 }
+
 
 //Run on first launch of application
 void UPuzzlePlatformsGameInstance::LoadMenu()
@@ -57,8 +74,14 @@ void UPuzzlePlatformsGameInstance::LoadPauseMenu()
     PauseMenu->SetMenuInterface(this);
 }
 
-void UPuzzlePlatformsGameInstance::Host()
+void UPuzzlePlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bool Success)
 {
+    if (!Success)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("Could not create session"));
+        return;
+    }
+    
     if(Menu != nullptr)
     {
         Menu->TearDown();
@@ -73,6 +96,15 @@ void UPuzzlePlatformsGameInstance::Host()
     if(!ensure(World != nullptr)) return;
 
     World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen"); 
+}
+
+void UPuzzlePlatformsGameInstance::Host()
+{
+    if(SessionInterface.IsValid())
+    {
+        FOnlineSessionSettings SessionSettings;
+        SessionInterface->CreateSession(0, TEXT("My Session Game"), SessionSettings);
+    }   
 }
 
 void UPuzzlePlatformsGameInstance::Join(const FString& Address)
