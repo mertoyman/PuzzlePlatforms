@@ -44,5 +44,8 @@ private:
 	class UMainMenu* Menu;
 
 	IOnlineSessionPtr SessionInterface;
+
+	void OnDestroySessionComplete(FName SessionName, bool Success);
 	void OnCreateSessionComplete(FName SessionName, bool Success);
+	void CreateSession();
 };

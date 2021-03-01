@@ -14,6 +14,8 @@
 #include "MenuSystem/MainMenu.h"
 #include "MenuSystem/PauseMenu.h"
 
+const static FName SESSION_NAME = TEXT("My Session Game");
+
 UPuzzlePlatformsGameInstance::UPuzzlePlatformsGameInstance(const FObjectInitializer& ObjectInitializer)
 {
     ConstructorHelpers::FClassFinder<UUserWidget> MenuBPClass(TEXT("/Game/MenuSystem/WBP_MainMenu"));
@@ -39,6 +41,7 @@ void UPuzzlePlatformsGameInstance::Init()
     if(SessionInterface.IsValid())
     {
         SessionInterface->OnCreateSessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformsGameInstance::OnCreateSessionComplete);
+        SessionInterface->OnDestroySessionCompleteDelegates.AddUObject(this, &UPuzzlePlatformsGameInstance::OnDestroySessionComplete);
     }
 }
 
@@ -74,6 +77,14 @@ void UPuzzlePlatformsGameInstance::LoadPauseMenu()
     PauseMenu->SetMenuInterface(this);
 }
 
+void UPuzzlePlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool Success)
+{
+    if(Success)
+    {
+        CreateSession();
+    }
+}
+
 void UPuzzlePlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bool Success)
 {
     if (!Success)
@@ -95,15 +106,31 @@ void UPuzzlePlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bo
     UWorld* World = GetWorld();
     if(!ensure(World != nullptr)) return;
 
-    World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen"); 
+    World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen");
+}
+
+void UPuzzlePlatformsGameInstance::CreateSession()
+{
+    if(SessionInterface.IsValid())
+    {
+        FOnlineSessionSettings SessionSettings;
+        SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
+    } 
 }
 
 void UPuzzlePlatformsGameInstance::Host()
 {
     if(SessionInterface.IsValid())
     {
-        FOnlineSessionSettings SessionSettings;
-        SessionInterface->CreateSession(0, TEXT("My Session Game"), SessionSettings);
+        auto ExistingSession = SessionInterface->GetNamedSession(SESSION_NAME);
+        if (ExistingSession != nullptr)
+        {
+            SessionInterface->DestroySession(SESSION_NAME);    
+        }
+        else
+        {
+            CreateSession();
+        }
     }   
 }
 
