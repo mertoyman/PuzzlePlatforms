@@ -53,52 +53,16 @@ void UPuzzlePlatformsGameInstance::Init()
     }
 }
 
-//Run on pause menu
-void UPuzzlePlatformsGameInstance::LoadMainMenu()
+void UPuzzlePlatformsGameInstance::CreateSession()
 {
-    APlayerController* PlayerController = GetFirstLocalPlayerController();
-    if(!ensure(PlayerController != nullptr)) return;
-   
-    PlayerController->ClientTravel("/Game/MenuSystem/MainMenu", ETravelType::TRAVEL_Absolute);
-}
-
-
-//Run on first launch of application
-void UPuzzlePlatformsGameInstance::LoadMenu()
-{
-    if(!ensure(MenuClass != nullptr)) return;
-    
-    Menu = CreateWidget<UMainMenu>(this, MenuClass);
-    if (!ensure(Menu != nullptr)) return;
-    
-    Menu->Setup();
-    Menu->SetMenuInterface(this);
-}
-
-void UPuzzlePlatformsGameInstance::LoadPauseMenu()
-{
-    if(!ensure(PauseMenuClass != nullptr)) return;
-
-    UMenuWidget* PauseMenu = CreateWidget<UMenuWidget>(this, PauseMenuClass);
-    if (!ensure(PauseMenu != nullptr)) return;
-    PauseMenu->Setup();
-    PauseMenu->SetMenuInterface(this);
-}
-
-void UPuzzlePlatformsGameInstance::OnFindSessionComplete(bool Success)
-{
-    if(Success)
+    if(SessionInterface.IsValid())
     {
-        UE_LOG(LogTemp, Warning, TEXT("Finished Find Session"));   
-    }
-}
-
-void UPuzzlePlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool Success)
-{
-    if(Success)
-    {
-        CreateSession();
-    }
+        FOnlineSessionSettings SessionSettings;
+        SessionSettings.bIsLANMatch = true;
+        SessionSettings.NumPublicConnections = 2;
+        SessionSettings.bShouldAdvertise = true;
+        SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
+    } 
 }
 
 void UPuzzlePlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bool Success)
@@ -125,14 +89,28 @@ void UPuzzlePlatformsGameInstance::OnCreateSessionComplete(FName SessionName, bo
     World->ServerTravel("/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen");
 }
 
-void UPuzzlePlatformsGameInstance::CreateSession()
+void UPuzzlePlatformsGameInstance::OnFindSessionComplete(bool Success)
 {
-    if(SessionInterface.IsValid())
+    if(Success && SessionSearch.IsValid())
     {
-        FOnlineSessionSettings SessionSettings;
-        SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
-    } 
+        UE_LOG(LogTemp, Warning, TEXT("Finished Find Session"));
+   
+        for(const FOnlineSessionSearchResult& SearchResult : SessionSearch->SearchResults)
+        {
+            UE_LOG(LogTemp, Warning, TEXT("Found session names: %s"), *SearchResult.GetSessionIdStr());
+            
+        }
+    }
 }
+
+void UPuzzlePlatformsGameInstance::OnDestroySessionComplete(FName SessionName, bool Success)
+{
+    if(Success)
+    {
+        CreateSession();
+    }
+}
+
 
 void UPuzzlePlatformsGameInstance::Host()
 {
@@ -166,4 +144,36 @@ void UPuzzlePlatformsGameInstance::Join(const FString& Address)
     if(!ensure(PlayerController != nullptr)) return;
 
     PlayerController->ClientTravel(Address, ETravelType::TRAVEL_Absolute);
+}
+
+//Run on pause menu
+void UPuzzlePlatformsGameInstance::LoadMainMenu()
+{
+    APlayerController* PlayerController = GetFirstLocalPlayerController();
+    if(!ensure(PlayerController != nullptr)) return;
+   
+    PlayerController->ClientTravel("/Game/MenuSystem/MainMenu", ETravelType::TRAVEL_Absolute);
+}
+
+
+//Run on first launch of application
+void UPuzzlePlatformsGameInstance::LoadMenu()
+{
+    if(!ensure(MenuClass != nullptr)) return;
+    
+    Menu = CreateWidget<UMainMenu>(this, MenuClass);
+    if (!ensure(Menu != nullptr)) return;
+    
+    Menu->Setup();
+    Menu->SetMenuInterface(this);
+}
+
+void UPuzzlePlatformsGameInstance::LoadPauseMenu()
+{
+    if(!ensure(PauseMenuClass != nullptr)) return;
+
+    UMenuWidget* PauseMenu = CreateWidget<UMenuWidget>(this, PauseMenuClass);
+    if (!ensure(PauseMenu != nullptr)) return;
+    PauseMenu->Setup();
+    PauseMenu->SetMenuInterface(this);
 }
