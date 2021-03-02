@@ -38,6 +38,8 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
     virtual void Join(const FString& Address) override;
 
 	virtual void LoadMainMenu() override;
+
+	virtual void RefreshServerList() override;
 	
 private:
 	TSubclassOf<class UUserWidget> MenuClass;
