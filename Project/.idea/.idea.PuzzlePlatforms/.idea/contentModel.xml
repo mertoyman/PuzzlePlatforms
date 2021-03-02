@@ -49333,6 +49333,8 @@
             <e p="MenuWidget.h" t="Include" />
             <e p="PauseMenu.cpp" t="Include" />
             <e p="PauseMenu.h" t="Include" />
+            <e p="ServerRow.cpp" t="Include" />
+            <e p="ServerRow.h" t="Include" />
           </e>
           <e p="MovingPlatform.cpp" t="Include" />
           <e p="MovingPlatform.h" t="Include" />

@@ -3,10 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
-#include "MenuInterface.h"
 #include "MenuWidget.h"
-#include "Blueprint/UserWidget.h"
 #include "MainMenu.generated.h"
 
 /**
@@ -17,10 +14,12 @@ class PUZZLEPLATFORMS_API UMainMenu : public UMenuWidget
 {
 	GENERATED_BODY()
 public:
-	
+	UMainMenu(const FObjectInitializer& ObjectInitializer);
 protected:
 	virtual bool Initialize();
 private:
+	TSubclassOf<class UUserWidget> ServerRowClass;
+
 	UPROPERTY(meta = (BindWidget))
 	class UButton* HostButton;
 
@@ -46,7 +45,8 @@ private:
 	class UWidget* JoinMenu;
 
 	UPROPERTY(meta = (BindWidget))
-	class UEditableTextBox* IPAddressField;
+	class UPanelWidget* ServerList;
+
 
 	UFUNCTION()
 	void HostServer();
