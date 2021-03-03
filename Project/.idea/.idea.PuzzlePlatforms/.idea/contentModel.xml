@@ -49305,6 +49305,7 @@
       <e p="UE4Game.Target.cs" t="Include" />
     </e>
     <e p="D:\Projects\Unreal Projects\Github Repos\Puzzle Platforms\Project" t="IncludeFlat">
+      <e p=".ignore" t="Include" />
       <e p="Config" t="Include">
         <e p="DefaultEditor.ini" t="Include" />
         <e p="DefaultEditorPerProjectUserSettings.ini" t="Include" />
@@ -49320,6 +49321,7 @@
         <e p="UE4.vcxproj" t="IncludeRecursive" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="PuzzlePlatforms.code-workspace" t="Include" />
       <e p="PuzzlePlatforms.sln" t="IncludeFlat" />
       <e p="PuzzlePlatforms.uproject" t="Include" />
       <e p="Source" t="Include">

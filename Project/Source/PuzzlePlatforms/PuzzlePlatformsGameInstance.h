@@ -35,7 +35,7 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 	virtual void Host() override;
 
 	UFUNCTION(Exec)
-    virtual void Join(const FString& Address) override;
+    virtual void Join(uint32 Index) override;
 
 	virtual void LoadMainMenu() override;
 
@@ -53,5 +53,6 @@ private:
 	void OnFindSessionComplete(bool Success);
 	void OnDestroySessionComplete(FName SessionName, bool Success);
 	void OnCreateSessionComplete(FName SessionName, bool Success);
+	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 	void CreateSession();
 };
