@@ -18,6 +18,7 @@ public:
 
 	void SetServerList(TArray<FString> ServerNames);
 
+	void UpdateChildren();
 	void SelectIndex(uint32 Index);
 	
 protected:
