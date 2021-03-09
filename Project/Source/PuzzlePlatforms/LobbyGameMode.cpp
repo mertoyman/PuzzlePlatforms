@@ -3,9 +3,9 @@
 
 #include "LobbyGameMode.h"
 
-void ALobbyGameMode::PostLogin(APlayerController* Player)
+void ALobbyGameMode::PostLogin(APlayerController* NewPlayer)
 {
-	Super::PostLogin(Player);
+	Super::PostLogin(NewPlayer);
 	
 	++NumOfPlayers;
 
@@ -14,6 +14,7 @@ void ALobbyGameMode::PostLogin(APlayerController* Player)
 		UWorld* World = GetWorld();
 		if(!ensure(World != nullptr)) return;
 
+		bUseSeamlessTravel = true;
 		World->ServerTravel("/Game/PuzzlePlatforms/Maps/Game?listen");
 	}
 }
