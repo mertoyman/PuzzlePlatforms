@@ -49325,6 +49325,8 @@
       <e p="PuzzlePlatforms.uproject" t="Include" />
       <e p="Source" t="Include">
         <e p="PuzzlePlatforms" t="Include">
+          <e p="LobbyGameMode.cpp" t="Include" />
+          <e p="LobbyGameMode.h" t="Include" />
           <e p="MenuSystem" t="Include">
             <e p="MainMenu.cpp" t="Include" />
             <e p="MainMenu.h" t="Include" />
