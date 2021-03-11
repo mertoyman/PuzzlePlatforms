@@ -21,6 +21,7 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 {
 	GENERATED_BODY()
 
+public:
 	UPuzzlePlatformsGameInstance(const FObjectInitializer& ObjectInitializer);
  
 	virtual void Init();
@@ -40,7 +41,9 @@ class PUZZLEPLATFORMS_API UPuzzlePlatformsGameInstance : public UGameInstance, p
 	virtual void LoadMainMenu() override;
 
 	virtual void RefreshServerList() override;
-	
+
+	void StartSession();
+
 private:
 	TSubclassOf<class UUserWidget> MenuClass;
 	TSubclassOf<class UUserWidget> PauseMenuClass;
